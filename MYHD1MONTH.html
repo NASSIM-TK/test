@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rogistration</title>
+    <link rel="stylesheet" href=" btstyle.css">
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "DvJQAxA2lO_g660NA",
+      });
+   })();
+</script>
+<script src="script.js"></script>
+</head>
+<body>
+
+
+    
+    <div class="container">
+        <div class="text">500.00DA <br>MYHD</div> <br>
+        <form>
+            <div class="form-row">
+                <div class="input1">
+                    <input type="name" id="name" class="name" required>
+                    <label for="name"> الإسم↑ </label>
+                </div>
+                <div class="input2"> <br>
+                    <input type="message" id="message" class="message" required>
+                    <label for="message"> اللقب ↑</label>
+                </div>
+
+
+                <div class="input3"> <br>
+                    <input type="subjec" id="subjec" class="subjec" required>
+                    <label for="subjec">الهاتف ↑</label>
+                </div>
+                <!--
+                <div class="input4"> <br>
+                    <input type="email" id="email" class="email" required>
+                    <label for="email">المدينة ↑</label>
+                </div><br><br><br>-->
+
+
+                 
+                
+                <div class="form-row submit-btn">
+                    <div class="input6">
+        
+                        <button type="submit"  onclick="sendMail();" >ok</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>
